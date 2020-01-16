@@ -1,11 +1,18 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main{
     width: 100%;
     height: 300px;
     background: lightgoldenrodyellow;
+    padding: 20px 0;
   }
   
   .container{
-    width: 400px;
+    width: 100%;
     height: 250px;
     background: lightpink;
   }
@@ -13,7 +20,7 @@
   .box{
     width: 50px;
     height: 50px;
-    background: black;
+    background: #8888aa;
     margin: 50px;
   }
   
@@ -23,5 +30,37 @@
   
   .bottomRow {
     height: 50%;
-    
+  }
+
+  .topRow, .bottomRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 720px) {
+    .box {
+      background-color: white;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media screen and (min-width: 721px) {
+    .box {
+      background-color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .container {
+      background-color: aqua;
+    }
   }
