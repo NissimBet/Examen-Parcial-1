@@ -3,6 +3,9 @@ function init() {
   let commentsForm = document.getElementById('formComment');
   let warningMessage = document.getElementById('warning');
   
+  let commenter = document.getElementById('username');
+  let commenterMessage = document.getElementById('userComment');
+
   let Comment = (name, comment) => `
     <div class="comment">
       <p class="comment-user">${name}</p>
@@ -13,8 +16,6 @@ function init() {
   commentsForm.addEventListener('submit', event => {
     event.preventDefault();
     
-    let commenter = document.getElementById('username');
-    let commenterMessage = document.getElementById('userComment');
        
     if(commenter.value !== '' && commenterMessage.value !== '') {
       commentsContainer.innerHTML += Comment(commenter.value, commenterMessage.value);
@@ -22,6 +23,24 @@ function init() {
     }
     else {
       warningMessage.style.display = 'block'
+    }
+  })
+
+  commenter.addEventListener("change", _ => {
+    if(commenter.value === "") {
+      warningMessage.style.display = 'block';
+    }
+    else {
+      warningMessage.style.display = 'none';
+    }
+  })
+
+  commenterMessage.addEventListener("change", _ => {
+    if(commenterMessage.value === "") {
+      warningMessage.style.display = 'block';
+    }
+    else {
+      warningMessage.style.display = 'none';
     }
   })
 }
