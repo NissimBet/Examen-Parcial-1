@@ -5,3 +5,5 @@
 - git commit -m "agregado titulo, doctype y lenguaje de sitio"
 - git add .
 - git commit -m "agregados tags de header, footer, main y sections"
+- git add .
+- git commit -m "agregado label para input de form y empty action al form"
