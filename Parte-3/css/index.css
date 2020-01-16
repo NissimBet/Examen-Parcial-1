@@ -19,9 +19,10 @@ fieldset legend{
 }
 
 #mainContainer{
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
     background-color: white;
+    min-height: 100vh;
 }
 
 #theJammerHeader, #theJammerFooter{
@@ -188,4 +189,38 @@ input[type=submit]{
 label{
     display: block;
     margin: 15px;
+}
+
+.comment {
+    width: 100%;
+    margin: 20px 10px;
+    text-align: left;
+    line-height: 1;
+
+    font-size: 16px;
+}
+
+.comment .comment-user {
+    color: #66bb88;
+    font-style: italic;
+    font-size: 1.8em;
+}
+
+.comment .comment-message {
+    font-size: 1em;
+}
+
+.comment .comment-user,
+.comment .comment-message {
+    margin: 5px 0;  
+}
+
+#warning {  
+    display: none;
+    border: 1px solid red;
+    background-color: #eebbbb;
+    color: black;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
 }
