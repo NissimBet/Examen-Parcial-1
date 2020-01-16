@@ -7,3 +7,8 @@
 - git commit -m "agregados tags de header, footer, main y sections"
 - git add .
 - git commit -m "agregado label para input de form y empty action al form"
+- git branch -b parte1
+- git add Parte-1/README.md
+- git commit -m "agregados comentarios al README"
+- git push
+
