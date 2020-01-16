@@ -1,3 +1,5 @@
 - git clone https://github.com/NissimBet/Examen-Parcial-1
 - git add .
 - git commit -m "README creado"
+- git add .
+- git commit -m "agregado titulo, doctype y lenguaje de sitio"
