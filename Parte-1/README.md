@@ -3,3 +3,5 @@
 - git commit -m "README creado"
 - git add .
 - git commit -m "agregado titulo, doctype y lenguaje de sitio"
+- git add .
+- git commit -m "agregados tags de header, footer, main y sections"
